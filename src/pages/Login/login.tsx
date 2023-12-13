@@ -36,7 +36,7 @@ const Login: React.FC = () => {
                             </div>
 
                             <div className='login-name'>
-                                <h4 className='mb-3'>Login to your account.</h4>
+                                <h4 className='mb-3'>Login to your account</h4>
                             </div>
 
                             <form onSubmit={handleSubmit(onSubmit)}>
