@@ -139,7 +139,7 @@ body {
 
 
 /* Mobile View Responsive */
-/* 
+
 @media only screen and (max-width: 600px) {
   .loginFrm .Lgnleft {
     padding: 50px;
@@ -164,4 +164,4 @@ body {
   .loginFrm .banner.img-fluid {
     display: none;
   }
-} */
+}
