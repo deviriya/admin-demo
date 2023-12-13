@@ -69,7 +69,7 @@ const Login: React.FC = () => {
                                             }
                                         })}
                                     />
-                                    {/* {errors.password && <span className='errMsg'>* {errors.password.message}</span>} */}
+                                    {errors.password && <span className='errMsg'>* {errors.password.message}</span>}
                                 </div>
                                 <div className='my-4 d-flex align-items-center'>
                                     <input type="checkbox" id="remember" name="remember" value="Bike" className='mx-2' />
