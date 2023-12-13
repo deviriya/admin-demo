@@ -146,22 +146,32 @@ body {
   }
 }
 
-@media only screen and(max-width: 768px) {
+@media (min-width: 300px) and (max-width: 1300px) {
   .loginFrm .Lgnleft {
     padding: 50px;
   }
 
-  .Lgnright.h3 {
+  .Lgnright h3 {
     color: var(--yellowbtn, #FCC703);
     margin-top: 30px;
-    font-size: 25px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .loginFrm .banner.img-fluid {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .Lgnright h3 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 760px) {
+  .Lgnright h3 {
+    font-size: 1.2rem;
   }
 }
