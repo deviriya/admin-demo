@@ -6,9 +6,13 @@ import {
     DropdownItem,
 } from 'reactstrap';
 import user from '../assets/user.png';
+import { AiOutlineClose } from 'react-icons/ai';
 import { BiMenuAltLeft } from 'react-icons/bi';
 import { FiSearch } from 'react-icons/fi';
 import { BsBellFill } from 'react-icons/bs';
+import './style.scss';
+import Logo from '../assets/Mazenet Logo PNG.png';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
 
@@ -29,15 +33,20 @@ export const Navbar = () => {
         <div className="container-fluid">
             <nav className="navbar">
                 <div className="nav-brand" onClick={sidebar}>
-                    <BiMenuAltLeft />
+                    <div className='mb-4 d-flex justify-content-between align-items-center'>
+                        <p className='m-0'>
+                            <BiMenuAltLeft />
+                            <Link to="/" className='logo'>
+                                <img src={Logo} width={180} className="img-fluid p-2" />
+                            </Link>
+                        </p>
+                        <span className='Mbllogo m-2' onClick={sidebar}><AiOutlineClose /></span>
+                    </div>
                 </div>
 
                 <div className="navbar-items">
                     <ul className="nav-item">
-                        <li className="nav-link grpField">
-                            <span className="srchIcn"><FiSearch /></span>
-                            <input type="text" className="form-control" placeholder="search" />
-                        </li>
+                       
                         <li className="nav-link">
                             <div className='drop'>
                                 <Dropdown isOpen={notify} toggle={notifytoggle}>
