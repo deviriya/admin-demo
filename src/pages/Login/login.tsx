@@ -1,10 +1,9 @@
 import React from 'react';
 import { Col, Row } from 'reactstrap';
 import { useForm } from 'react-hook-form';
-
-import '../../App.css';
 import MazenetLogoWhite from '../../assets/Mazenet-Logo-WHITE.png';
 import Banner from '../../assets/banner.png';
+import { Link } from 'react-router-dom';
 
 interface FormData {
     email: string;
@@ -24,7 +23,7 @@ const Login: React.FC = () => {
             <div className='bg-cover container'>
             </div>
 
-            <div className='loginFrm col-12'>
+            <div className='loginFrm'>
                 <Row>
                     <Col md={6} className='mr-5'>
                         <div className='Lgnleft'>
@@ -79,7 +78,7 @@ const Login: React.FC = () => {
 
                                 <div className='text-center'>
                                     <button className='primaryBtn mb-3' type='submit'>Login</button><br />
-                                    <a href='#' className='forgot-text'>Forgot Password?</a>
+                                    <Link to='/forgot-password' className='forgot-text'>Forgot Password?</Link>
                                 </div>
                                 <div className='cpyRyts mt-5'>
                                     <p>Copyrights © 2023 Mazenet Solution Pvt Ltd. All Rights Reserved</p>
@@ -89,11 +88,9 @@ const Login: React.FC = () => {
                     </Col>
                     <Col md={6}>
                         <img src={Banner} className='banner img-fluid mt-5' />
-                        {/* <div className="banner-img"></div> */}
                     </Col>
                 </Row>
             </div>
-
 
         </div>
     );
