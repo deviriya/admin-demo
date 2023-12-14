@@ -45,7 +45,7 @@ const Login: React.FC = () => {
                                 <div className='my-4'>
                                     <input
                                         type='text'
-                                        className='form-control'
+                                        className='form-control mt-5'
                                         placeholder='Your email address'
                                         autoFocus
                                         {...register("email", {
