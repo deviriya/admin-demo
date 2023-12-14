@@ -30,7 +30,7 @@ const Login: React.FC = () => {
                     <Col md={6}>
                         <div className='Lgnleft'>
                             <div className="zoom-out">
-                                <img src={MazenetLogoWhite} className='w-50 img-fluid' alt='Mazenet Logo' />
+                                <img src={MazenetLogoWhite} className='w-50 logo img-fluid' alt='Mazenet Logo' />
                             </div>
                             <div className='Lgnright'>
                                 <h3>Get future fit with the <br /> most in-demand skills!</h3>

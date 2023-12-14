@@ -13,7 +13,6 @@ const Dashboard: React.FC = () => {
           <h3>Welcome to the Dashboard!</h3>
           <p>This is a placeholder for your dashboard content.</p>
         </section>
-
         {/* Add more sections or components based on your dashboard content */}
       </main>
 

@@ -60,7 +60,7 @@ const ForgotPassword: React.FC = () => {
                   <Link to='/' className='forgot-text'>Back to Login?</Link>
                 </div>
                 <div className='cpyRyts mt-5'>
-                  <p>Copyrights © 2023 Mazenet Solution Pvt Ltd. All Rights Reserved</p>
+                  <p className='font-14'>Copyrights © 2023 Mazenet Solution Pvt Ltd. All Rights Reserved</p>
                 </div>
               </form>
             </div>

@@ -1,0 +1,18 @@
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 16">
+<g id="chevron_left">
+<mask id="mask0_509_4157" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-2" y="-3" width="43" height="21">
+<rect id="Bounding box" x="-2" y="17.5" width="20" height="43" transform="rotate(-90 -2 17.5)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_509_4157)">
+<path id="chevron_left_2" d="M18.7259 6.55927L14.9807 10.3045C14.9028 10.3825 14.8192 10.4375 14.73 10.4695C14.6408 10.5016 14.5486 10.5176 14.4535 10.5176C14.3531 10.5176 14.2596 10.5016 14.1731 10.4695C14.0865 10.4375 14.0043 10.3825 13.9263 10.3045L10.1811 6.55927C10.0604 6.43855 10 6.29219 10 6.12019C10 5.94819 10.0604 5.80183 10.1811 5.6811C10.3018 5.56037 10.4482 5.5 10.6202 5.5C10.7922 5.5 10.9385 5.56037 11.0593 5.6811L14.4535 9.07533L17.8478 5.6811C17.9685 5.56037 18.1149 5.5 18.2869 5.5C18.4589 5.5 18.6052 5.56037 18.7259 5.6811C18.8467 5.80183 18.907 5.94819 18.907 6.12019C18.907 6.29219 18.8467 6.43855 18.7259 6.55927Z" fill="url(#paint0_linear_509_4157)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_509_4157" x1="14.4535" y1="5.5" x2="14.4535" y2="10.5176" gradientUnits="userSpaceOnUse">
+<stop stop-color="#221058"/>
+<stop offset="1" stop-color="#301C6B"/>
+</linearGradient>
+</defs>
+</svg>

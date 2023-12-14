@@ -28,8 +28,8 @@ function App() {
       <Fragment>
         <Navbar />
         <div className="main-content">
-            <Sidebar />
-            <Outlet />
+          <Sidebar />
+          <Outlet />
         </div>
         {/* <div className='main-content'>
           <Outlet />
