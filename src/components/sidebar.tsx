@@ -2,33 +2,20 @@
 import { Link, useLocation } from 'react-router-dom'
 import { BsGrid, BsCurrencyDollar } from 'react-icons/bs';
 import { IoMdWallet } from 'react-icons/io';
-import { AiFillFileText, AiOutlineClose } from 'react-icons/ai';
+import { AiFillFileText } from 'react-icons/ai';
 import { BiSolidUser } from "react-icons/bi";
 import { MdContacts } from 'react-icons/md';
-import Logo from '../assets/Mazenet Logo PNG.png';
+import './style.scss';
 
 
 export const Sidebar = () => {
 
     const location = useLocation();
 
-    const sidebar = (): void => {
-        const Sidemenu = document.querySelector("body");
-        if (Sidemenu instanceof HTMLElement) {
-            Sidemenu.classList.add("showSide");
-        }
-    };
-
     return (
         <div className="sidebar">
-            <div className='mb-4 d-flex justify-content-between align-items-center'>
-                <Link to="/" className='logo'>
-                    <img src={Logo} width={180} className="img-fluid p-2" />
-                </Link>
-                <span className='Mbllogo m-2' onClick={sidebar}><AiOutlineClose /></span>
-            </div>
             <ul className='side-item'>
-                <li className={`side-link ${location.pathname == "/" && "active"}`}>
+                <li className={`side-link ${location.pathname == "/dashboard" && "active"}`}>
                     <Link to='/' className='m-0'><BsGrid /> Dashboard</Link>
                 </li>
                 <li className={`side-link ${location.pathname == "/accounts" && "active"}`}>

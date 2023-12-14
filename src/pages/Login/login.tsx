@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import MazenetLogoWhite from '../../assets/Mazenet-Logo-WHITE.png';
 import Banner from '../../assets/banner.png';
 import { Link } from 'react-router-dom';
+// import Aos from 'aos';
 
 interface FormData {
     email: string;
@@ -13,6 +14,10 @@ interface FormData {
 const Login: React.FC = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm<FormData>();
 
+    // useEffect(() => {
+    //     Aos.init({ duration: 500, once: true })
+    // }, [])
+
     const onSubmit = (data: FormData) => {
         console.log(data);
         reset();
@@ -20,19 +25,16 @@ const Login: React.FC = () => {
 
     return (
         <div className='bgmain'>
-            <div className='bg-cover container'>
-            </div>
-
-            <div className='loginFrm'>
+            <div className='loginFrm animated_div'>
                 <Row>
-                    <Col md={6} className='mr-5'>
+                    <Col md={6}>
                         <div className='Lgnleft'>
-                            <div className='text-center'>
-                                <img src={MazenetLogoWhite} className='logo img-fluid' alt='Mazenet Logo' />
+                            <div className="zoom-out">
+                                <img src={MazenetLogoWhite} className='w-50 img-fluid' alt='Mazenet Logo' />
                             </div>
                             <div className='Lgnright'>
                                 <h3>Get future fit with the <br /> most in-demand skills!</h3>
-                                <p>Experience immersive learning with PRISM</p>
+                                <p className='font-14'>Experience immersive learning with PRISM</p>
                             </div>
 
                             <div className='login-name'>
@@ -54,7 +56,7 @@ const Login: React.FC = () => {
                                             }
                                         })}
                                     />
-                                    {errors.email && <span className='errMsg'>* {errors.email.message}</span>}
+                                    {errors.email && <span className='text-danger font-14'>* {errors.email.message}</span>}
                                 </div>
                                 <div className='my-4'>
                                     <input
@@ -69,25 +71,27 @@ const Login: React.FC = () => {
                                             }
                                         })}
                                     />
-                                    {errors.password && <span className='errMsg'>* {errors.password.message}</span>}
+                                    {errors.password && <span className='text-danger font-14'>* {errors.password.message}</span>}
                                 </div>
                                 <div className='my-4 d-flex align-items-center'>
-                                    <input type="checkbox" id="remember" name="remember" value="Bike" className='mx-2' />
-                                    <label htmlFor="remember" className='check'> Remember username</label>
+                                    <input type="checkbox" id="remember" name="remember" value="Bike" className='mx-1' />
+                                    <label htmlFor="remember" className='check font-14'> Remember username</label>
                                 </div>
 
                                 <div className='text-center'>
                                     <button className='primaryBtn mb-3' type='submit'>Login</button><br />
-                                    <Link to='/forgot-password' className='forgot-text'>Forgot Password?</Link>
+                                    <Link to='/forgot-password' className='forgot-text font-14'>Forgot Password?</Link>
                                 </div>
                                 <div className='cpyRyts mt-5'>
-                                    <p>Copyrights © 2023 Mazenet Solution Pvt Ltd. All Rights Reserved</p>
+                                    <p className='font-14'>Copyrights © 2023 Mazenet Solution Pvt Ltd. All Rights Reserved</p>
                                 </div>
                             </form>
                         </div>
                     </Col>
                     <Col md={6}>
-                        <img src={Banner} className='banner img-fluid mt-5' />
+                        <div className='d-none d-md-block'>
+                            <img src={Banner} className='img-fluid mt-5' />
+                        </div>
                     </Col>
                 </Row>
             </div>
