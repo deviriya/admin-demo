@@ -71,6 +71,11 @@ body {
     font-weight: 400;
   }
 
+  .logo.img-fluid {
+    width: 50%;
+    margin-right: 50%;
+}
+
 }
 
 .primaryBtn {
@@ -103,8 +108,10 @@ body {
 
   p {
     color: #ACACAC;
-  }
-
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 4300;
+   }
 }
 
 .login-name {
@@ -131,7 +138,6 @@ body {
 /* Mobile View Responsive */
 
 @media (max-width: 796px) {
-
   .loginFrm .Lgnleft {
     padding: 2rem;
   }
@@ -166,5 +172,11 @@ body {
 @media (max-width: 760px) {
   .Lgnright h3 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width:640px){
+  .banner.img-fluid{
+      display:none;
   }
 }

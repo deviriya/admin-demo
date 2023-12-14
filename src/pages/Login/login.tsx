@@ -90,7 +90,7 @@ const Login: React.FC = () => {
                     </Col>
                     <Col md={6}>
                         <div className='d-none d-md-block'>
-                            <img src={Banner} className='img-fluid mt-5' />
+                            <img src={Banner} className='banner img-fluid mt-5' />
                         </div>
                     </Col>
                 </Row>
