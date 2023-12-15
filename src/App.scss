@@ -169,8 +169,18 @@ body {
 
 @media (max-width: 1000px) {
   .Lgnright h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
+
+  .cpyRyts .font-14 {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    margin-left: -10px;
+    line-height: 20px;
+  }
+
 }
 
 @media (max-width: 320px) {
@@ -191,10 +201,12 @@ body {
   .loginFrm .logo.img-fluid {
     margin-left: 20%;
   }
+
   .bgmain {
     background: #23115A;
   }
-  .cpyRyts .font-14{
+
+  .cpyRyts .font-14 {
     margin-left: 20px;
   }
 }
